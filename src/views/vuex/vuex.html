@@ -1,0 +1,14 @@
+
+<section class="vuex">
+<h5>state value : {{msg}} </h5>
+<h5>queue state value : {{textstate}} </h5>
+<div class="container">
+  <div class="row"> 
+      <input v-model="textstate" class="form-control mr-sm-2" type="text" placeholder="new value" aria-label="Search" style="width: 400px;">
+      <button type="button" class="btn btn-secondary" @click="setAction()" >set new value</button>
+  </div>
+</div>
+<hr class="my-4">
+<button type="button" class="btn btn-secondary" @click="setActionClear()" >reset value</button>
+</section>
+
